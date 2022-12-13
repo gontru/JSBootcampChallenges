@@ -1,6 +1,11 @@
 /* eslint-disable no-unused-vars */
 
 function doesInclude(str, letter) {
+    if (str.indexOf(letter) === undefined || null){
+      return false
+    } else {
+      return true
+    }
 
 }
 
