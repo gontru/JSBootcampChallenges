@@ -1,10 +1,10 @@
 /* eslint-disable no-unused-vars */
 
 function doesInclude(str, letter) {
-    if (str.indexOf(letter) === undefined || null){
-      return false
-    } else {
+    if (str.includes(letter)){
       return true
+    } else {
+      return false
     }
 
 }
@@ -20,14 +20,17 @@ function isPalindrome(str) {
       return true;
     } else {
       return false;
-    }
+
+}
 }
 
 
 function cap(str, letter) {
-  if (str.includes(letter) === true){
-    return str.charAt(letter.charAt(str + 1));
-  }else {
+  const index = str.indexOf(letter)
+  const returnLetter =str[index = 1].toUppercase()
+   if (index !== -1){
+    return returnLetter;
+}else {
     return "sorry not found"
   }
 }
