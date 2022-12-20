@@ -65,7 +65,7 @@ describe('numObjectProps', () => {
   });
 });
 
-describe('shoppingCart', () => {
+describe.only('shoppingCart', () => {
   it('is a function', () => {
     expect(typeof shoppingCart).to.equal('function');
   });
